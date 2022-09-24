@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218deg, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 15px;
+}
+.container .advice-box {
+  width: 600px;
+  padding: 50px 35px;
+  background-color: hsl(217deg, 19%, 24%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: hsl(193deg, 38%, 86%);
+  border-radius: 10px;
+  position: relative;
+}
+.container .advice-number {
+  text-align: center;
+  color: hsl(150deg, 100%, 66%);
+  font-size: 11px;
+  letter-spacing: 5px;
+  margin-bottom: 1.5rem;
+}
+.container .advice-text {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.container .divider {
+  background-image: url(./images/pattern-divider-mobile.svg);
+  width: 100%;
+  height: 16px;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .container .divider {
+    background-image: url(./images/pattern-divider-desktop.svg);
+  }
+}
+.container .dice {
+  background-color: hsl(150deg, 100%, 66%);
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -25px;
+  margin: auto;
+  display: flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s ease-in-out;
+}
+.container .dice:hover {
+  box-shadow: rgb(82, 255, 168) 0px 0px 25px;
+}/*# sourceMappingURL=style.css.map */
